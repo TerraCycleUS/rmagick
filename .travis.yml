@@ -18,9 +18,7 @@ env:
   # Latest release
   - IMAGEMAGICK_VERSION=latest
 
-before_install:
-  - pwd
-  - . before_install_$TRAVIS_OS_NAME.sh
+before_install: ./before_install_$TRAVIS_OS_NAME.sh
 
 rvm:
   - 1.8
